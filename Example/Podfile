@@ -1,4 +1,3 @@
-pod "MotioSDK", :path => "../MotioSDK.podspec"
+platform :ios, "7.0"
 
-target "DemoTests" do
-end
+pod "MotioSDK", path: "../MotioSDK.podspec"

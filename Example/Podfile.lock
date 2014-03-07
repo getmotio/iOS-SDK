@@ -1,0 +1,14 @@
+PODS:
+  - MotioSDK (0.0.1)
+
+DEPENDENCIES:
+  - MotioSDK (from `../MotioSDK.podspec`)
+
+EXTERNAL SOURCES:
+  MotioSDK:
+    :path: ../MotioSDK.podspec
+
+SPEC CHECKSUMS:
+  MotioSDK: 60bcc6b80dbe3edec45ecc687aa90a2b398a7b97
+
+COCOAPODS: 0.29.0
