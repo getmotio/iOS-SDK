@@ -15,4 +15,9 @@
 - (id)initWithUUID:(NSUUID *)uuid major:(CLBeaconMajorValue)major;
 - (id)initWithUUID:(NSUUID *)uuid major:(CLBeaconMajorValue)major minor:(CLBeaconMinorValue)minor;
 
+- (void)startMonitoring;
+- (void)stopMonitoring;
+- (void)startRanging;
+- (void)stopRanging;
+
 @end
