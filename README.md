@@ -1,8 +1,5 @@
 # MotioSDK
 
-[![Version](http://cocoapod-badges.herokuapp.com/v/MotioSDK/badge.png)](http://cocoadocs.org/docsets/MotioSDK)
-[![Platform](http://cocoapod-badges.herokuapp.com/p/MotioSDK/badge.png)](http://cocoadocs.org/docsets/MotioSDK)
-
 ## Usage
 
 To run the example project; clone the repo, and run `pod install` from the Example directory first.
