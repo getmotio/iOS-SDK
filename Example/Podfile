@@ -1,7 +1,4 @@
 pod "MotioSDK", :path => "../MotioSDK.podspec"
 
-target "Demo" do
-end
-
 target "DemoTests" do
 end
