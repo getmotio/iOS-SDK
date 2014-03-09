@@ -7,7 +7,7 @@ PODS:
   - MotioSDK (0.0.1)
 
 DEPENDENCIES:
-  - Kiwi/XCTest (= 2.2.3)
+  - Kiwi/XCTest
   - MotioSDK (from `../MotioSDK.podspec`)
 
 EXTERNAL SOURCES:

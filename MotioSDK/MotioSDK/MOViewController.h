@@ -1,8 +1,8 @@
 //
 //  MOViewController.h
-//  MotioSDKTest
+//  MotioSDK
 //
-//  Created by Paul Ballesty on 3/8/14.
+//  Created by Paul Ballesty on 3/9/14.
 //  Copyright (c) 2014 Motio. All rights reserved.
 //
 
