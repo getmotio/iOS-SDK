@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		515BC7BEAC11425EB3EE8378 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8345F4A15814F9BB24F5ABE /* libPods.a */; };
+		56012E7E18CCE9E000EA6955 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56012E7D18CCE9E000EA6955 /* Foundation.framework */; };
+		56012E8018CCE9E000EA6955 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56012E7F18CCE9E000EA6955 /* CoreGraphics.framework */; };
+		56012E8218CCE9E000EA6955 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56012E8118CCE9E000EA6955 /* UIKit.framework */; };
+		56012E8818CCE9E000EA6955 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56012E8618CCE9E000EA6955 /* InfoPlist.strings */; };
+		56012E8A18CCE9E000EA6955 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56012E8918CCE9E000EA6955 /* main.m */; };
+		56012E8E18CCE9E000EA6955 /* MOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56012E8D18CCE9E000EA6955 /* MOAppDelegate.m */; };
+		56012E9118CCE9E000EA6955 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56012E8F18CCE9E000EA6955 /* Main.storyboard */; };
+		56012E9418CCE9E000EA6955 /* MOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56012E9318CCE9E000EA6955 /* MOViewController.m */; };
+		56012E9618CCE9E000EA6955 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56012E9518CCE9E000EA6955 /* Images.xcassets */; };
+		56012E9D18CCE9E000EA6955 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56012E9C18CCE9E000EA6955 /* XCTest.framework */; };
+		56012E9E18CCE9E000EA6955 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56012E7D18CCE9E000EA6955 /* Foundation.framework */; };
+		56012E9F18CCE9E000EA6955 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56012E8118CCE9E000EA6955 /* UIKit.framework */; };
+		56012EA718CCE9E000EA6955 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56012EA518CCE9E000EA6955 /* InfoPlist.strings */; };
+		56DB333E18CCEAAA00478788 /* CLBeacon+Indexable.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DB333818CCEAAA00478788 /* CLBeacon+Indexable.m */; };
+		56DB333F18CCEAAA00478788 /* MOBeaconDataAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DB333B18CCEAAA00478788 /* MOBeaconDataAccumulator.m */; };
+		56DB334018CCEAAA00478788 /* MOProximityService.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DB333D18CCEAAA00478788 /* MOProximityService.m */; };
+		56DB334318CCED2E00478788 /* MOProximityServiceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DB334218CCED2E00478788 /* MOProximityServiceSpec.m */; };
+		5C0B1DC291D14F00A22DAEC2 /* libPods-MotioSDKTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D08C2EA98B49A1A0C7E055 /* libPods-MotioSDKTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56012EA018CCE9E000EA6955 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56012E7218CCE9E000EA6955 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56012E7918CCE9E000EA6955;
+			remoteInfo = MotioSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02B16B9C6F1D45AE90C013F7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		56012E7A18CCE9E000EA6955 /* MotioSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotioSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56012E7D18CCE9E000EA6955 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		56012E7F18CCE9E000EA6955 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		56012E8118CCE9E000EA6955 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		56012E8518CCE9E000EA6955 /* MotioSDK-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MotioSDK-Info.plist"; sourceTree = "<group>"; };
+		56012E8718CCE9E000EA6955 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		56012E8918CCE9E000EA6955 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		56012E8B18CCE9E000EA6955 /* MotioSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MotioSDK-Prefix.pch"; sourceTree = "<group>"; };
+		56012E8C18CCE9E000EA6955 /* MOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOAppDelegate.h; sourceTree = "<group>"; };
+		56012E8D18CCE9E000EA6955 /* MOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOAppDelegate.m; sourceTree = "<group>"; };
+		56012E9018CCE9E000EA6955 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		56012E9218CCE9E000EA6955 /* MOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOViewController.h; sourceTree = "<group>"; };
+		56012E9318CCE9E000EA6955 /* MOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOViewController.m; sourceTree = "<group>"; };
+		56012E9518CCE9E000EA6955 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		56012E9B18CCE9E000EA6955 /* MotioSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotioSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56012E9C18CCE9E000EA6955 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		56012EA418CCE9E000EA6955 /* MotioSDKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MotioSDKTests-Info.plist"; sourceTree = "<group>"; };
+		56012EA618CCE9E000EA6955 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		56DB333718CCEAAA00478788 /* CLBeacon+Indexable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLBeacon+Indexable.h"; sourceTree = "<group>"; };
+		56DB333818CCEAAA00478788 /* CLBeacon+Indexable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLBeacon+Indexable.m"; sourceTree = "<group>"; };
+		56DB333A18CCEAAA00478788 /* MOBeaconDataAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOBeaconDataAccumulator.h; sourceTree = "<group>"; };
+		56DB333B18CCEAAA00478788 /* MOBeaconDataAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOBeaconDataAccumulator.m; sourceTree = "<group>"; };
+		56DB333C18CCEAAA00478788 /* MOProximityService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOProximityService.h; sourceTree = "<group>"; };
+		56DB333D18CCEAAA00478788 /* MOProximityService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOProximityService.m; sourceTree = "<group>"; };
+		56DB334218CCED2E00478788 /* MOProximityServiceSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOProximityServiceSpec.m; sourceTree = "<group>"; };
+		A5D08C2EA98B49A1A0C7E055 /* libPods-MotioSDKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MotioSDKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8345F4A15814F9BB24F5ABE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA76BBB8BFDE4F8295247CF7 /* Pods-MotioSDKTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotioSDKTests.xcconfig"; path = "Pods/Pods-MotioSDKTests.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56012E7718CCE9E000EA6955 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56012E8018CCE9E000EA6955 /* CoreGraphics.framework in Frameworks */,
+				56012E8218CCE9E000EA6955 /* UIKit.framework in Frameworks */,
+				56012E7E18CCE9E000EA6955 /* Foundation.framework in Frameworks */,
+				515BC7BEAC11425EB3EE8378 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56012E9818CCE9E000EA6955 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56012E9D18CCE9E000EA6955 /* XCTest.framework in Frameworks */,
+				56012E9F18CCE9E000EA6955 /* UIKit.framework in Frameworks */,
+				56012E9E18CCE9E000EA6955 /* Foundation.framework in Frameworks */,
+				5C0B1DC291D14F00A22DAEC2 /* libPods-MotioSDKTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56012E7118CCE9E000EA6955 = {
+			isa = PBXGroup;
+			children = (
+				56DB333418CCEAAA00478788 /* Classes */,
+				56012E8318CCE9E000EA6955 /* MotioSDK */,
+				56012EA218CCE9E000EA6955 /* MotioSDKTests */,
+				56012E7C18CCE9E000EA6955 /* Frameworks */,
+				56012E7B18CCE9E000EA6955 /* Products */,
+				02B16B9C6F1D45AE90C013F7 /* Pods.xcconfig */,
+				DA76BBB8BFDE4F8295247CF7 /* Pods-MotioSDKTests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		56012E7B18CCE9E000EA6955 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56012E7A18CCE9E000EA6955 /* MotioSDK.app */,
+				56012E9B18CCE9E000EA6955 /* MotioSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56012E7C18CCE9E000EA6955 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56012E7D18CCE9E000EA6955 /* Foundation.framework */,
+				56012E7F18CCE9E000EA6955 /* CoreGraphics.framework */,
+				56012E8118CCE9E000EA6955 /* UIKit.framework */,
+				56012E9C18CCE9E000EA6955 /* XCTest.framework */,
+				A8345F4A15814F9BB24F5ABE /* libPods.a */,
+				A5D08C2EA98B49A1A0C7E055 /* libPods-MotioSDKTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56012E8318CCE9E000EA6955 /* MotioSDK */ = {
+			isa = PBXGroup;
+			children = (
+				56012E8C18CCE9E000EA6955 /* MOAppDelegate.h */,
+				56012E8D18CCE9E000EA6955 /* MOAppDelegate.m */,
+				56012E8F18CCE9E000EA6955 /* Main.storyboard */,
+				56012E9218CCE9E000EA6955 /* MOViewController.h */,
+				56012E9318CCE9E000EA6955 /* MOViewController.m */,
+				56012E9518CCE9E000EA6955 /* Images.xcassets */,
+				56012E8418CCE9E000EA6955 /* Supporting Files */,
+			);
+			path = MotioSDK;
+			sourceTree = "<group>";
+		};
+		56012E8418CCE9E000EA6955 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				56012E8518CCE9E000EA6955 /* MotioSDK-Info.plist */,
+				56012E8618CCE9E000EA6955 /* InfoPlist.strings */,
+				56012E8918CCE9E000EA6955 /* main.m */,
+				56012E8B18CCE9E000EA6955 /* MotioSDK-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56012EA218CCE9E000EA6955 /* MotioSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				56012EA318CCE9E000EA6955 /* Supporting Files */,
+				56DB334218CCED2E00478788 /* MOProximityServiceSpec.m */,
+			);
+			path = MotioSDKTests;
+			sourceTree = "<group>";
+		};
+		56012EA318CCE9E000EA6955 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				56012EA418CCE9E000EA6955 /* MotioSDKTests-Info.plist */,
+				56012EA518CCE9E000EA6955 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56DB333418CCEAAA00478788 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				56DB333518CCEAAA00478788 /* ios */,
+			);
+			name = Classes;
+			path = ../Classes;
+			sourceTree = "<group>";
+		};
+		56DB333518CCEAAA00478788 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				56DB333618CCEAAA00478788 /* Models */,
+				56DB333918CCEAAA00478788 /* Services */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		56DB333618CCEAAA00478788 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				56DB333718CCEAAA00478788 /* CLBeacon+Indexable.h */,
+				56DB333818CCEAAA00478788 /* CLBeacon+Indexable.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		56DB333918CCEAAA00478788 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				56DB333A18CCEAAA00478788 /* MOBeaconDataAccumulator.h */,
+				56DB333B18CCEAAA00478788 /* MOBeaconDataAccumulator.m */,
+				56DB333C18CCEAAA00478788 /* MOProximityService.h */,
+				56DB333D18CCEAAA00478788 /* MOProximityService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56012E7918CCE9E000EA6955 /* MotioSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56012EAC18CCE9E000EA6955 /* Build configuration list for PBXNativeTarget "MotioSDK" */;
+			buildPhases = (
+				F4D63F8FECE6409FA8796B81 /* Check Pods Manifest.lock */,
+				56012E7618CCE9E000EA6955 /* Sources */,
+				56012E7718CCE9E000EA6955 /* Frameworks */,
+				56012E7818CCE9E000EA6955 /* Resources */,
+				71D4E4670C284A4EA3F38C0A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MotioSDK;
+			productName = MotioSDK;
+			productReference = 56012E7A18CCE9E000EA6955 /* MotioSDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+		56012E9A18CCE9E000EA6955 /* MotioSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56012EAF18CCE9E000EA6955 /* Build configuration list for PBXNativeTarget "MotioSDKTests" */;
+			buildPhases = (
+				2826EF17E3C740618E0758F5 /* Check Pods Manifest.lock */,
+				56012E9718CCE9E000EA6955 /* Sources */,
+				56012E9818CCE9E000EA6955 /* Frameworks */,
+				56012E9918CCE9E000EA6955 /* Resources */,
+				D9E949199764461C90B5DB8B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56012EA118CCE9E000EA6955 /* PBXTargetDependency */,
+			);
+			name = MotioSDKTests;
+			productName = MotioSDKTests;
+			productReference = 56012E9B18CCE9E000EA6955 /* MotioSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56012E7218CCE9E000EA6955 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MO;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Motio;
+				TargetAttributes = {
+					56012E9A18CCE9E000EA6955 = {
+						TestTargetID = 56012E7918CCE9E000EA6955;
+					};
+				};
+			};
+			buildConfigurationList = 56012E7518CCE9E000EA6955 /* Build configuration list for PBXProject "MotioSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 56012E7118CCE9E000EA6955;
+			productRefGroup = 56012E7B18CCE9E000EA6955 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56012E7918CCE9E000EA6955 /* MotioSDK */,
+				56012E9A18CCE9E000EA6955 /* MotioSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56012E7818CCE9E000EA6955 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56012E9618CCE9E000EA6955 /* Images.xcassets in Resources */,
+				56012E8818CCE9E000EA6955 /* InfoPlist.strings in Resources */,
+				56012E9118CCE9E000EA6955 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56012E9918CCE9E000EA6955 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56012EA718CCE9E000EA6955 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2826EF17E3C740618E0758F5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		71D4E4670C284A4EA3F38C0A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9E949199764461C90B5DB8B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-MotioSDKTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4D63F8FECE6409FA8796B81 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56012E7618CCE9E000EA6955 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56012E8E18CCE9E000EA6955 /* MOAppDelegate.m in Sources */,
+				56DB333E18CCEAAA00478788 /* CLBeacon+Indexable.m in Sources */,
+				56012E9418CCE9E000EA6955 /* MOViewController.m in Sources */,
+				56DB333F18CCEAAA00478788 /* MOBeaconDataAccumulator.m in Sources */,
+				56012E8A18CCE9E000EA6955 /* main.m in Sources */,
+				56DB334018CCEAAA00478788 /* MOProximityService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56012E9718CCE9E000EA6955 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56DB334318CCED2E00478788 /* MOProximityServiceSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56012EA118CCE9E000EA6955 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56012E7918CCE9E000EA6955 /* MotioSDK */;
+			targetProxy = 56012EA018CCE9E000EA6955 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		56012E8618CCE9E000EA6955 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56012E8718CCE9E000EA6955 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		56012E8F18CCE9E000EA6955 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56012E9018CCE9E000EA6955 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		56012EA518CCE9E000EA6955 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56012EA618CCE9E000EA6955 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		56012EAA18CCE9E000EA6955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		56012EAB18CCE9E000EA6955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56012EAD18CCE9E000EA6955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02B16B9C6F1D45AE90C013F7 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MotioSDK/MotioSDK-Prefix.pch";
+				INFOPLIST_FILE = "MotioSDK/MotioSDK-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		56012EAE18CCE9E000EA6955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02B16B9C6F1D45AE90C013F7 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MotioSDK/MotioSDK-Prefix.pch";
+				INFOPLIST_FILE = "MotioSDK/MotioSDK-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		56012EB018CCE9E000EA6955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA76BBB8BFDE4F8295247CF7 /* Pods-MotioSDKTests.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MotioSDK.app/MotioSDK";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MotioSDK/MotioSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MotioSDKTests/MotioSDKTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		56012EB118CCE9E000EA6955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA76BBB8BFDE4F8295247CF7 /* Pods-MotioSDKTests.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MotioSDK.app/MotioSDK";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MotioSDK/MotioSDK-Prefix.pch";
+				INFOPLIST_FILE = "MotioSDKTests/MotioSDKTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56012E7518CCE9E000EA6955 /* Build configuration list for PBXProject "MotioSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56012EAA18CCE9E000EA6955 /* Debug */,
+				56012EAB18CCE9E000EA6955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56012EAC18CCE9E000EA6955 /* Build configuration list for PBXNativeTarget "MotioSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56012EAD18CCE9E000EA6955 /* Debug */,
+				56012EAE18CCE9E000EA6955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56012EAF18CCE9E000EA6955 /* Build configuration list for PBXNativeTarget "MotioSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56012EB018CCE9E000EA6955 /* Debug */,
+				56012EB118CCE9E000EA6955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56012E7218CCE9E000EA6955 /* Project object */;
+}
