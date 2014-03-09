@@ -25,6 +25,8 @@ NSInteger const MOBeaconDataAccumulatorBufferSize = 10;
     self = [super init];
     if (self) {
         self.beaconAccuracyBuffers = [[NSMutableDictionary alloc] init];
+        self.beaconAccuracyTotals = [[NSMutableDictionary alloc] init];
+        self.beaconAccuracyAvg = [[NSMutableDictionary alloc] init];
     }
     return self;
 }
@@ -37,7 +39,7 @@ NSInteger const MOBeaconDataAccumulatorBufferSize = 10;
 
 - (NSMutableArray *)accuracyBufferFor:(CLBeacon *)beacon {
     NSMutableArray *accuracyBuffer = [self.beaconAccuracyBuffers objectForKey:beacon.key];
-    if (accuracyBuffer) {
+    if (!accuracyBuffer) {
         accuracyBuffer = [[NSMutableArray alloc] initWithCapacity:MOBeaconDataAccumulatorBufferSize];
         [self.beaconAccuracyBuffers setObject:accuracyBuffer forKey:beacon.key];
     }
