@@ -3,6 +3,6 @@ platform :ios, "7.0"
 pod "MotioSDK", :path => "../MotioSDK.podspec"
 
 target "MotioSDKTests" do
-	pod 'Kiwi/XCTest'
+	pod 'Kiwi/XCTest', '2.2.3'
 end
 

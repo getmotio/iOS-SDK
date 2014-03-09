@@ -1,0 +1,18 @@
+language: objective-c
+
+before_install:
+  - brew update
+  - brew install xctool
+  - gem install cocoapods -v 0.29.0 --no-ri --no-doc
+
+script:
+  - xctool -workspace ./MotioSDK/MotioSDK.xcworkspace -scheme MotioSDK -sdk iphonesimulator build test
+
+notifications:
+  email:
+    recipients:
+      - ios@getmotio.com
+
+branches:
+  only:
+    - master
