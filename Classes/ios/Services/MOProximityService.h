@@ -9,11 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
+FOUNDATION_EXPORT NSString * const MOProximityServiceUUIDKey;
+FOUNDATION_EXPORT NSString * const MOProximityServiceMajorKey;
+FOUNDATION_EXPORT NSString * const MOProximityServiceMinorKey;
+
 @interface MOProximityService : NSObject
 
-- (id)initWithUUID:(NSUUID *)uuid;
-- (id)initWithUUID:(NSUUID *)uuid major:(CLBeaconMajorValue)major;
-- (id)initWithUUID:(NSUUID *)uuid major:(CLBeaconMajorValue)major minor:(CLBeaconMinorValue)minor;
+- (id)initWithRegion:(NSDictionary *)regionData;
 
 - (void)startMonitoring;
 - (void)stopMonitoring;

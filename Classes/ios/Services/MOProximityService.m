@@ -10,7 +10,11 @@
 
 NSString * const MOBeaconRegionIdentifier = @"RegionOfInterest";
 
-@interface MOProximityService()
+NSString * const MOProximityServiceUUIDKey = @"MOProximityServiceUUIDKey";
+NSString * const MOProximityServiceMajorKey = @"MOProximityServiceMajorKey";
+NSString * const MOProximityServiceMinorKey = @"MOProximityServiceMinorKey";
+
+@interface MOProximityService() <CLLocationManagerDelegate>
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) CLBeaconRegion *regionOfInterest;
 @property (assign, nonatomic) BOOL monitoring;
@@ -21,27 +25,39 @@ NSString * const MOBeaconRegionIdentifier = @"RegionOfInterest";
 
 #pragma mark - Initializers
 
-- (id)initWithUUID:(NSUUID *)uuid {
-    [self initialize];
-    self.regionOfInterest = [[CLBeaconRegion alloc] initWithProximityUUID:uuid identifier:MOBeaconRegionIdentifier];
-    return self;
+- (id)init {
+    return [self initWithRegion:@{}];
 }
 
-- (id)initWithUUID:(NSUUID *)uuid major:(CLBeaconMajorValue)major {
-    [self initialize];
-    self.regionOfInterest = [[CLBeaconRegion alloc] initWithProximityUUID:uuid major:major identifier:MOBeaconRegionIdentifier];
+- (id)initWithRegion:(NSDictionary *)regionData {
+    self = [super init];
+    if (self) {
+        self.locationManager = [[CLLocationManager alloc] init];
+        self.locationManager.delegate = self;
+        self.monitoring = NO;
+        self.ranging = NO;
+        NSString *uuidString = [regionData valueForKey:MOProximityServiceUUIDKey];
+        NSNumber *major = [regionData valueForKey:MOProximityServiceMajorKey];
+        NSNumber *minor = [regionData valueForKey:MOProximityServiceMinorKey];
+        CLBeaconRegion *region = [CLBeaconRegion alloc];
+        if (uuidString) {
+            NSUUID * uuid = [[NSUUID alloc] initWithUUIDString:uuidString];
+            if (major && minor) {
+                region = [region initWithProximityUUID:uuid major:[major integerValue] minor:[minor integerValue] identifier:MOBeaconRegionIdentifier];
+                NSLog(@"%@ - Initialized <%@, %@, %@>", MOProximityService.class, uuidString, major, minor);
+            } else if (major) {
+                region = [region initWithProximityUUID:uuid major:[major integerValue] identifier:MOBeaconRegionIdentifier];
+                NSLog(@"%@ - Initialized <%@, %@>", MOProximityService.class, uuidString, major);
+            } else {
+                region = [region initWithProximityUUID:uuid identifier:MOBeaconRegionIdentifier];
+                NSLog(@"%@ - Initialized <%@>", MOProximityService.class, uuidString);
+            }
+        } else {
+            NSLog(@"%@ - Invalid initialization", MOProximityService.class);
+        }
+        self.regionOfInterest = region;
+    }
     return self;
-}
-
-- (id)initWithUUID:(NSUUID *)uuid major:(CLBeaconMajorValue)major minor:(CLBeaconMinorValue)minor {
-    [self initialize];
-    self.regionOfInterest = [[CLBeaconRegion alloc] initWithProximityUUID:uuid major:major minor:minor identifier:MOBeaconRegionIdentifier];
-    return self;
-}
-
-- (void)initialize {
-    self.monitoring = NO;
-    self.ranging = NO;
 }
 
 #pragma mark - Controls
@@ -50,6 +66,7 @@ NSString * const MOBeaconRegionIdentifier = @"RegionOfInterest";
     if (!self.monitoring) {
         self.monitoring = YES;
         [self.locationManager startMonitoringForRegion:self.regionOfInterest];
+        NSLog(@"%@ - Monitoring Started", MOProximityService.class);
     }
 }
 
@@ -57,6 +74,7 @@ NSString * const MOBeaconRegionIdentifier = @"RegionOfInterest";
     if (self.monitoring) {
         self.monitoring = NO;
         [self.locationManager stopMonitoringForRegion:self.regionOfInterest];
+        NSLog(@"%@ - Monitoring Stopped", MOProximityService.class);
     }
 }
 
@@ -64,6 +82,7 @@ NSString * const MOBeaconRegionIdentifier = @"RegionOfInterest";
     if (!self.ranging) {
         self.ranging = YES;
         [self.locationManager startRangingBeaconsInRegion:self.regionOfInterest];
+        NSLog(@"%@ - Ranging Started", MOProximityService.class);
     }
 }
 
@@ -71,7 +90,22 @@ NSString * const MOBeaconRegionIdentifier = @"RegionOfInterest";
     if (self.ranging) {
         self.ranging = NO;
         [self.locationManager stopRangingBeaconsInRegion:self.regionOfInterest];
+        NSLog(@"%@ - Ranging Stopped", MOProximityService.class);
     }
+}
+
+#pragma mark - CLLocationManagerDelegate
+
+- (void)locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region {
+    NSLog(@"Beacons: %@", beacons);
+}
+
+- (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
+    [self startRanging];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region {
+    [self stopRanging];
 }
 
 @end
