@@ -1,18 +1,18 @@
 //
-//  ExampleTests.m
-//  ExampleTests
+//  MotioSDKTestTests.m
+//  MotioSDKTestTests
 //
-//  Created by Paul Ballesty on 3/6/14.
+//  Created by Paul Ballesty on 3/8/14.
 //  Copyright (c) 2014 Motio. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface ExampleTests : XCTestCase
+@interface MotioSDKTestTests : XCTestCase
 
 @end
 
-@implementation ExampleTests
+@implementation MotioSDKTestTests
 
 - (void)setUp
 {

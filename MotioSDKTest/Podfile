@@ -1,0 +1,8 @@
+platform :ios, "7.0"
+
+pod "MotioSDK", path: "../MotioSDK.podspec"
+
+target "MotioSDKTestTests", exclusive: true  do
+	pod 'Kiwi/XCTest', '2.2.3'
+end
+

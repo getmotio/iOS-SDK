@@ -1,7 +1,13 @@
 PODS:
+  - Kiwi/ARC (2.2.3)
+  - Kiwi/NonARC (2.2.3)
+  - Kiwi/XCTest (2.2.3):
+    - Kiwi/ARC
+    - Kiwi/NonARC
   - MotioSDK (0.0.1)
 
 DEPENDENCIES:
+  - Kiwi/XCTest (= 2.2.3)
   - MotioSDK (from `../MotioSDK.podspec`)
 
 EXTERNAL SOURCES:
@@ -9,6 +15,7 @@ EXTERNAL SOURCES:
     :path: ../MotioSDK.podspec
 
 SPEC CHECKSUMS:
+  Kiwi: 04c51e880831d291748ec702d42c4101f7eb95c9
   MotioSDK: 60bcc6b80dbe3edec45ecc687aa90a2b398a7b97
 
 COCOAPODS: 0.29.0
