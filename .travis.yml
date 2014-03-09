@@ -7,7 +7,8 @@ before_install:
   - gem install cocoapods -v 0.29.0 --no-ri --no-doc
 
 script:
-  - xctool -workspace ./MotioSDK/MotioSDK.xcworkspace -scheme MotioSDK -sdk iphonesimulator build test
+  - cd MotioSDK
+  - xctool -workspace MotioSDK.xcworkspace -scheme MotioSDK -sdk iphonesimulator build test
 
 notifications:
   email:
