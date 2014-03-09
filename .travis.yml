@@ -8,6 +8,7 @@ before_install:
 
 script:
   - cd MotioSDK
+  - pod install
   - xctool -workspace MotioSDK.xcworkspace -scheme MotioSDK -sdk iphonesimulator build test
 
 notifications:
