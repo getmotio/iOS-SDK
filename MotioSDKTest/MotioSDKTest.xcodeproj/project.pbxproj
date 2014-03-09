@@ -24,6 +24,8 @@
 		56BBE05918CB6A8500B48F12 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56BBE05718CB6A8500B48F12 /* InfoPlist.strings */; };
 		56BBE05B18CB6A8500B48F12 /* MotioSDKTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BBE05A18CB6A8500B48F12 /* MotioSDKTestTests.m */; };
 		56BBE06A18CB6C0200B48F12 /* MOProximityService.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BBE06918CB6C0200B48F12 /* MOProximityService.m */; };
+		56D4DC5618CC0869004698FB /* MOBeaconDataAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D4DC5518CC0869004698FB /* MOBeaconDataAccumulator.m */; };
+		56D4DC5918CC0D50004698FB /* CLBeacon+Indexable.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D4DC5818CC0D50004698FB /* CLBeacon+Indexable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,10 @@
 		56BBE05A18CB6A8500B48F12 /* MotioSDKTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MotioSDKTestTests.m; sourceTree = "<group>"; };
 		56BBE06818CB6C0200B48F12 /* MOProximityService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOProximityService.h; sourceTree = "<group>"; };
 		56BBE06918CB6C0200B48F12 /* MOProximityService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOProximityService.m; sourceTree = "<group>"; };
+		56D4DC5418CC0869004698FB /* MOBeaconDataAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOBeaconDataAccumulator.h; sourceTree = "<group>"; };
+		56D4DC5518CC0869004698FB /* MOBeaconDataAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOBeaconDataAccumulator.m; sourceTree = "<group>"; };
+		56D4DC5718CC0D50004698FB /* CLBeacon+Indexable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLBeacon+Indexable.h"; sourceTree = "<group>"; };
+		56D4DC5818CC0D50004698FB /* CLBeacon+Indexable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLBeacon+Indexable.m"; sourceTree = "<group>"; };
 		BA678BEA83C94879826191EE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -189,6 +195,8 @@
 		56BBE06618CB6C0200B48F12 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				56D4DC5718CC0D50004698FB /* CLBeacon+Indexable.h */,
+				56D4DC5818CC0D50004698FB /* CLBeacon+Indexable.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -198,6 +206,8 @@
 			children = (
 				56BBE06818CB6C0200B48F12 /* MOProximityService.h */,
 				56BBE06918CB6C0200B48F12 /* MOProximityService.m */,
+				56D4DC5418CC0869004698FB /* MOBeaconDataAccumulator.h */,
+				56D4DC5518CC0869004698FB /* MOBeaconDataAccumulator.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -368,8 +378,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				56BBE04018CB6A8500B48F12 /* MOAppDelegate.m in Sources */,
+				56D4DC5918CC0D50004698FB /* CLBeacon+Indexable.m in Sources */,
 				56BBE06A18CB6C0200B48F12 /* MOProximityService.m in Sources */,
 				56BBE04618CB6A8500B48F12 /* MOViewController.m in Sources */,
+				56D4DC5618CC0869004698FB /* MOBeaconDataAccumulator.m in Sources */,
 				56BBE03C18CB6A8500B48F12 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
