@@ -22,7 +22,6 @@
 		56BBE05018CB6A8500B48F12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BBE02F18CB6A8500B48F12 /* Foundation.framework */; };
 		56BBE05118CB6A8500B48F12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BBE03318CB6A8500B48F12 /* UIKit.framework */; };
 		56BBE05918CB6A8500B48F12 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56BBE05718CB6A8500B48F12 /* InfoPlist.strings */; };
-		56BBE05B18CB6A8500B48F12 /* MotioSDKTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BBE05A18CB6A8500B48F12 /* MotioSDKTestTests.m */; };
 		56BBE06A18CB6C0200B48F12 /* MOProximityService.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BBE06918CB6C0200B48F12 /* MOProximityService.m */; };
 		56D4DC5618CC0869004698FB /* MOBeaconDataAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D4DC5518CC0869004698FB /* MOBeaconDataAccumulator.m */; };
 		56D4DC5918CC0D50004698FB /* CLBeacon+Indexable.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D4DC5818CC0D50004698FB /* CLBeacon+Indexable.m */; };
@@ -42,25 +41,24 @@
 		17178C9B43D043639EA3627C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		1B2E3A91FD5C4DBF96BD9FAD /* Pods-MotioSDKTestTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotioSDKTestTests.xcconfig"; path = "Pods/Pods-MotioSDKTestTests.xcconfig"; sourceTree = "<group>"; };
 		43CB7E3D549C45E184AB6F5A /* libPods-MotioSDKTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MotioSDKTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		56BBE02C18CB6A8500B48F12 /* MotioSDKTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotioSDKTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56BBE02C18CB6A8500B48F12 /* MotioSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotioSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56BBE02F18CB6A8500B48F12 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		56BBE03118CB6A8500B48F12 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		56BBE03318CB6A8500B48F12 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		56BBE03718CB6A8500B48F12 /* MotioSDKTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MotioSDKTest-Info.plist"; sourceTree = "<group>"; };
+		56BBE03718CB6A8500B48F12 /* MotioSDK-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MotioSDK-Info.plist"; sourceTree = "<group>"; };
 		56BBE03918CB6A8500B48F12 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		56BBE03B18CB6A8500B48F12 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		56BBE03D18CB6A8500B48F12 /* MotioSDKTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MotioSDKTest-Prefix.pch"; sourceTree = "<group>"; };
+		56BBE03D18CB6A8500B48F12 /* MotioSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MotioSDK-Prefix.pch"; sourceTree = "<group>"; };
 		56BBE03E18CB6A8500B48F12 /* MOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOAppDelegate.h; sourceTree = "<group>"; };
 		56BBE03F18CB6A8500B48F12 /* MOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOAppDelegate.m; sourceTree = "<group>"; };
 		56BBE04218CB6A8500B48F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56BBE04418CB6A8500B48F12 /* MOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOViewController.h; sourceTree = "<group>"; };
 		56BBE04518CB6A8500B48F12 /* MOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOViewController.m; sourceTree = "<group>"; };
 		56BBE04718CB6A8500B48F12 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		56BBE04D18CB6A8500B48F12 /* MotioSDKTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotioSDKTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56BBE04D18CB6A8500B48F12 /* MotioSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotioSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56BBE04E18CB6A8500B48F12 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		56BBE05618CB6A8500B48F12 /* MotioSDKTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MotioSDKTestTests-Info.plist"; sourceTree = "<group>"; };
+		56BBE05618CB6A8500B48F12 /* MotioSDKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MotioSDKTests-Info.plist"; sourceTree = "<group>"; };
 		56BBE05818CB6A8500B48F12 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		56BBE05A18CB6A8500B48F12 /* MotioSDKTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MotioSDKTestTests.m; sourceTree = "<group>"; };
 		56BBE06818CB6C0200B48F12 /* MOProximityService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOProximityService.h; sourceTree = "<group>"; };
 		56BBE06918CB6C0200B48F12 /* MOProximityService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOProximityService.m; sourceTree = "<group>"; };
 		56D4DC5418CC0869004698FB /* MOBeaconDataAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOBeaconDataAccumulator.h; sourceTree = "<group>"; };
@@ -112,8 +110,8 @@
 		56BBE02D18CB6A8500B48F12 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				56BBE02C18CB6A8500B48F12 /* MotioSDKTest.app */,
-				56BBE04D18CB6A8500B48F12 /* MotioSDKTestTests.xctest */,
+				56BBE02C18CB6A8500B48F12 /* MotioSDK.app */,
+				56BBE04D18CB6A8500B48F12 /* MotioSDKTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,10 +146,10 @@
 		56BBE03618CB6A8500B48F12 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				56BBE03718CB6A8500B48F12 /* MotioSDKTest-Info.plist */,
+				56BBE03718CB6A8500B48F12 /* MotioSDK-Info.plist */,
 				56BBE03818CB6A8500B48F12 /* InfoPlist.strings */,
 				56BBE03B18CB6A8500B48F12 /* main.m */,
-				56BBE03D18CB6A8500B48F12 /* MotioSDKTest-Prefix.pch */,
+				56BBE03D18CB6A8500B48F12 /* MotioSDK-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -159,7 +157,6 @@
 		56BBE05418CB6A8500B48F12 /* MotioSDKTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				56BBE05A18CB6A8500B48F12 /* MotioSDKTestTests.m */,
 				56BBE05518CB6A8500B48F12 /* Supporting Files */,
 			);
 			path = MotioSDKTestTests;
@@ -168,7 +165,7 @@
 		56BBE05518CB6A8500B48F12 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				56BBE05618CB6A8500B48F12 /* MotioSDKTestTests-Info.plist */,
+				56BBE05618CB6A8500B48F12 /* MotioSDKTests-Info.plist */,
 				56BBE05718CB6A8500B48F12 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -215,9 +212,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		56BBE02B18CB6A8500B48F12 /* MotioSDKTest */ = {
+		56BBE02B18CB6A8500B48F12 /* MotioSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 56BBE05E18CB6A8500B48F12 /* Build configuration list for PBXNativeTarget "MotioSDKTest" */;
+			buildConfigurationList = 56BBE05E18CB6A8500B48F12 /* Build configuration list for PBXNativeTarget "MotioSDK" */;
 			buildPhases = (
 				C24A7FAB8AB44696934DA15C /* Check Pods Manifest.lock */,
 				56BBE02818CB6A8500B48F12 /* Sources */,
@@ -229,14 +226,14 @@
 			);
 			dependencies = (
 			);
-			name = MotioSDKTest;
+			name = MotioSDK;
 			productName = MotioSDKTest;
-			productReference = 56BBE02C18CB6A8500B48F12 /* MotioSDKTest.app */;
+			productReference = 56BBE02C18CB6A8500B48F12 /* MotioSDK.app */;
 			productType = "com.apple.product-type.application";
 		};
-		56BBE04C18CB6A8500B48F12 /* MotioSDKTestTests */ = {
+		56BBE04C18CB6A8500B48F12 /* MotioSDKTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 56BBE06118CB6A8500B48F12 /* Build configuration list for PBXNativeTarget "MotioSDKTestTests" */;
+			buildConfigurationList = 56BBE06118CB6A8500B48F12 /* Build configuration list for PBXNativeTarget "MotioSDKTests" */;
 			buildPhases = (
 				CE089D4CD5D240F0AAC1A9C9 /* Check Pods Manifest.lock */,
 				56BBE04918CB6A8500B48F12 /* Sources */,
@@ -249,9 +246,9 @@
 			dependencies = (
 				56BBE05318CB6A8500B48F12 /* PBXTargetDependency */,
 			);
-			name = MotioSDKTestTests;
+			name = MotioSDKTests;
 			productName = MotioSDKTestTests;
-			productReference = 56BBE04D18CB6A8500B48F12 /* MotioSDKTestTests.xctest */;
+			productReference = 56BBE04D18CB6A8500B48F12 /* MotioSDKTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -269,7 +266,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 56BBE02718CB6A8500B48F12 /* Build configuration list for PBXProject "MotioSDKTest" */;
+			buildConfigurationList = 56BBE02718CB6A8500B48F12 /* Build configuration list for PBXProject "MotioSDK" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -282,8 +279,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				56BBE02B18CB6A8500B48F12 /* MotioSDKTest */,
-				56BBE04C18CB6A8500B48F12 /* MotioSDKTestTests */,
+				56BBE02B18CB6A8500B48F12 /* MotioSDK */,
+				56BBE04C18CB6A8500B48F12 /* MotioSDKTests */,
 			);
 		};
 /* End PBXProject section */
@@ -390,7 +387,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56BBE05B18CB6A8500B48F12 /* MotioSDKTestTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,7 +395,7 @@
 /* Begin PBXTargetDependency section */
 		56BBE05318CB6A8500B48F12 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 56BBE02B18CB6A8500B48F12 /* MotioSDKTest */;
+			target = 56BBE02B18CB6A8500B48F12 /* MotioSDK */;
 			targetProxy = 56BBE05218CB6A8500B48F12 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -511,9 +507,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MotioSDKTest/MotioSDKTest-Prefix.pch";
-				INFOPLIST_FILE = "MotioSDKTest/MotioSDKTest-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MotioSDKTest/MotioSDK-Prefix.pch";
+				INFOPLIST_FILE = "MotioSDKTest/MotioSDK-Info.plist";
+				PRODUCT_NAME = MotioSDK;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -525,9 +521,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MotioSDKTest/MotioSDKTest-Prefix.pch";
-				INFOPLIST_FILE = "MotioSDKTest/MotioSDKTest-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MotioSDKTest/MotioSDK-Prefix.pch";
+				INFOPLIST_FILE = "MotioSDKTest/MotioSDK-Info.plist";
+				PRODUCT_NAME = MotioSDK;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -549,8 +545,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "MotioSDKTestTests/MotioSDKTestTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "MotioSDKTestTests/MotioSDKTests-Info.plist";
+				PRODUCT_NAME = MotioSDKTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -569,8 +565,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MotioSDKTest/MotioSDKTest-Prefix.pch";
-				INFOPLIST_FILE = "MotioSDKTestTests/MotioSDKTestTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "MotioSDKTestTests/MotioSDKTests-Info.plist";
+				PRODUCT_NAME = MotioSDKTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -579,7 +575,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		56BBE02718CB6A8500B48F12 /* Build configuration list for PBXProject "MotioSDKTest" */ = {
+		56BBE02718CB6A8500B48F12 /* Build configuration list for PBXProject "MotioSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				56BBE05C18CB6A8500B48F12 /* Debug */,
@@ -588,7 +584,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		56BBE05E18CB6A8500B48F12 /* Build configuration list for PBXNativeTarget "MotioSDKTest" */ = {
+		56BBE05E18CB6A8500B48F12 /* Build configuration list for PBXNativeTarget "MotioSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				56BBE05F18CB6A8500B48F12 /* Debug */,
@@ -597,7 +593,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		56BBE06118CB6A8500B48F12 /* Build configuration list for PBXNativeTarget "MotioSDKTestTests" */ = {
+		56BBE06118CB6A8500B48F12 /* Build configuration list for PBXNativeTarget "MotioSDKTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				56BBE06218CB6A8500B48F12 /* Debug */,
