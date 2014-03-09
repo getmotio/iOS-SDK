@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+FOUNDATION_EXPORT NSInteger const MOBeaconDataAccumulatorBufferSize;
+FOUNDATION_EXPORT CGFloat const MOBeaconDataAccumulatorUnknownAccuracy;
+
 @class CLBeacon;
 @interface MOBeaconDataAccumulator : NSObject
 
