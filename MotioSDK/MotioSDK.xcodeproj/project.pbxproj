@@ -25,6 +25,7 @@
 		56DB333F18CCEAAA00478788 /* MOBeaconDataAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DB333B18CCEAAA00478788 /* MOBeaconDataAccumulator.m */; };
 		56DB334018CCEAAA00478788 /* MOProximityService.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DB333D18CCEAAA00478788 /* MOProximityService.m */; };
 		56DB334318CCED2E00478788 /* MOProximityServiceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DB334218CCED2E00478788 /* MOProximityServiceSpec.m */; };
+		56DB334618CD1CAC00478788 /* MOBeaconDataAccumulatorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DB334518CD1CAC00478788 /* MOBeaconDataAccumulatorSpec.m */; };
 		5C0B1DC291D14F00A22DAEC2 /* libPods-MotioSDKTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D08C2EA98B49A1A0C7E055 /* libPods-MotioSDKTests.a */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		56DB333C18CCEAAA00478788 /* MOProximityService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOProximityService.h; sourceTree = "<group>"; };
 		56DB333D18CCEAAA00478788 /* MOProximityService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOProximityService.m; sourceTree = "<group>"; };
 		56DB334218CCED2E00478788 /* MOProximityServiceSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOProximityServiceSpec.m; sourceTree = "<group>"; };
+		56DB334518CD1CAC00478788 /* MOBeaconDataAccumulatorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOBeaconDataAccumulatorSpec.m; sourceTree = "<group>"; };
 		A5D08C2EA98B49A1A0C7E055 /* libPods-MotioSDKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MotioSDKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8345F4A15814F9BB24F5ABE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA76BBB8BFDE4F8295247CF7 /* Pods-MotioSDKTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotioSDKTests.xcconfig"; path = "Pods/Pods-MotioSDKTests.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			children = (
 				56012EA318CCE9E000EA6955 /* Supporting Files */,
 				56DB334218CCED2E00478788 /* MOProximityServiceSpec.m */,
+				56DB334518CD1CAC00478788 /* MOBeaconDataAccumulatorSpec.m */,
 			);
 			path = MotioSDKTests;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56DB334318CCED2E00478788 /* MOProximityServiceSpec.m in Sources */,
+				56DB334618CD1CAC00478788 /* MOBeaconDataAccumulatorSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

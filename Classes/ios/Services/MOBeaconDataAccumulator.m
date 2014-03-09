@@ -11,6 +11,7 @@
 #import <CoreLocation/CoreLocation.h>
 
 NSInteger const MOBeaconDataAccumulatorBufferSize = 10;
+CGFloat const MOBeaconDataAccumulatorUnknownAccuracy = 50.0f;
 
 @interface MOBeaconDataAccumulator()
 @property (strong, nonatomic) NSMutableDictionary *beaconAccuracyBuffers;
@@ -47,14 +48,15 @@ NSInteger const MOBeaconDataAccumulatorBufferSize = 10;
 }
 
 - (void)pushBeaconData:(CLBeacon *)beacon {
+    CGFloat accuracy = beacon.accuracy >= 0 ? beacon.accuracy : MOBeaconDataAccumulatorUnknownAccuracy;
     NSMutableArray *accuracyBuffer = [self accuracyBufferFor:beacon];
-    [accuracyBuffer addObject:@(beacon.accuracy)];
+    [accuracyBuffer addObject:@(accuracy)];
     NSNumber *total = [self.beaconAccuracyTotals objectForKey:beacon.key];
     
     if (!total) {
-        total = @(beacon.accuracy);
+        total = @(accuracy);
     } else {
-        total = @([total floatValue] + beacon.accuracy);
+        total = @([total floatValue] + accuracy);
     }
     
     if ([accuracyBuffer count] > MOBeaconDataAccumulatorBufferSize) {
@@ -67,7 +69,8 @@ NSInteger const MOBeaconDataAccumulatorBufferSize = 10;
 }
 
 - (CGFloat)proximityToBeacon:(CLBeacon *)beacon {
-    return [[self.beaconAccuracyAvg objectForKey:beacon.key] floatValue];
+    NSNumber *accuracy = [self.beaconAccuracyAvg objectForKey:beacon.key];
+    return accuracy ? [accuracy floatValue] : MOBeaconDataAccumulatorUnknownAccuracy;
 }
 
 @end
