@@ -7,6 +7,7 @@
 //
 
 #import "MOProximityService.h"
+#import "MOBeaconDataAccumulator.h"
 
 NSString * const MOBeaconRegionIdentifier = @"RegionOfInterest";
 
@@ -17,6 +18,7 @@ NSString * const MOProximityServiceMinorKey = @"MOProximityServiceMinorKey";
 @interface MOProximityService() <CLLocationManagerDelegate>
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) CLBeaconRegion *regionOfInterest;
+@property (strong, nonatomic) MOBeaconDataAccumulator *beaconDataAccumulator;
 @property (assign, nonatomic) BOOL monitoring;
 @property (assign, nonatomic) BOOL ranging;
 @end
@@ -34,6 +36,7 @@ NSString * const MOProximityServiceMinorKey = @"MOProximityServiceMinorKey";
     if (self) {
         self.locationManager = [[CLLocationManager alloc] init];
         self.locationManager.delegate = self;
+        self.beaconDataAccumulator = [[MOBeaconDataAccumulator alloc] init];
         self.monitoring = NO;
         self.ranging = NO;
         NSString *uuidString = [regionData valueForKey:MOProximityServiceUUIDKey];
@@ -97,7 +100,10 @@ NSString * const MOProximityServiceMinorKey = @"MOProximityServiceMinorKey";
 #pragma mark - CLLocationManagerDelegate
 
 - (void)locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region {
-    NSLog(@"Beacons: %@", beacons);
+    [self.beaconDataAccumulator pushRangedBeaconsData:beacons];
+    for (CLBeacon *beacon in beacons) {
+        NSLog(@"Beacon <%@, %@, %@> - %f", [beacon.proximityUUID UUIDString], beacon.major, beacon.minor, [self.beaconDataAccumulator proximityToBeacon:beacon]);
+    }
 }
 
 - (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
