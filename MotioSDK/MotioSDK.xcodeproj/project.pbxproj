@@ -26,6 +26,8 @@
 		56DB334018CCEAAA00478788 /* MOProximityService.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DB333D18CCEAAA00478788 /* MOProximityService.m */; };
 		56DB334318CCED2E00478788 /* MOProximityServiceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DB334218CCED2E00478788 /* MOProximityServiceSpec.m */; };
 		56DB334618CD1CAC00478788 /* MOBeaconDataAccumulatorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DB334518CD1CAC00478788 /* MOBeaconDataAccumulatorSpec.m */; };
+		56DB334918CD529C00478788 /* MOZoneService.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DB334818CD529C00478788 /* MOZoneService.m */; };
+		56DB334C18CD5A3B00478788 /* MOZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DB334B18CD5A3B00478788 /* MOZone.m */; };
 		5C0B1DC291D14F00A22DAEC2 /* libPods-MotioSDKTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D08C2EA98B49A1A0C7E055 /* libPods-MotioSDKTests.a */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +69,11 @@
 		56DB333D18CCEAAA00478788 /* MOProximityService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOProximityService.m; sourceTree = "<group>"; };
 		56DB334218CCED2E00478788 /* MOProximityServiceSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOProximityServiceSpec.m; sourceTree = "<group>"; };
 		56DB334518CD1CAC00478788 /* MOBeaconDataAccumulatorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOBeaconDataAccumulatorSpec.m; sourceTree = "<group>"; };
+		56DB334718CD529C00478788 /* MOZoneService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOZoneService.h; sourceTree = "<group>"; };
+		56DB334818CD529C00478788 /* MOZoneService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOZoneService.m; sourceTree = "<group>"; };
+		56DB334A18CD5A3B00478788 /* MOZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOZone.h; sourceTree = "<group>"; };
+		56DB334B18CD5A3B00478788 /* MOZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOZone.m; sourceTree = "<group>"; };
+		56DB334D18CD657C00478788 /* MOProximityDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOProximityDelegate.h; sourceTree = "<group>"; };
 		A5D08C2EA98B49A1A0C7E055 /* libPods-MotioSDKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MotioSDKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8345F4A15814F9BB24F5ABE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA76BBB8BFDE4F8295247CF7 /* Pods-MotioSDKTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotioSDKTests.xcconfig"; path = "Pods/Pods-MotioSDKTests.xcconfig"; sourceTree = "<group>"; };
@@ -200,6 +207,8 @@
 			children = (
 				56DB333718CCEAAA00478788 /* CLBeacon+Indexable.h */,
 				56DB333818CCEAAA00478788 /* CLBeacon+Indexable.m */,
+				56DB334A18CD5A3B00478788 /* MOZone.h */,
+				56DB334B18CD5A3B00478788 /* MOZone.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -211,6 +220,9 @@
 				56DB333B18CCEAAA00478788 /* MOBeaconDataAccumulator.m */,
 				56DB333C18CCEAAA00478788 /* MOProximityService.h */,
 				56DB333D18CCEAAA00478788 /* MOProximityService.m */,
+				56DB334718CD529C00478788 /* MOZoneService.h */,
+				56DB334818CD529C00478788 /* MOZoneService.m */,
+				56DB334D18CD657C00478788 /* MOProximityDelegate.h */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -382,6 +394,8 @@
 			files = (
 				56012E8E18CCE9E000EA6955 /* MOAppDelegate.m in Sources */,
 				56DB333E18CCEAAA00478788 /* CLBeacon+Indexable.m in Sources */,
+				56DB334918CD529C00478788 /* MOZoneService.m in Sources */,
+				56DB334C18CD5A3B00478788 /* MOZone.m in Sources */,
 				56012E9418CCE9E000EA6955 /* MOViewController.m in Sources */,
 				56DB333F18CCEAAA00478788 /* MOBeaconDataAccumulator.m in Sources */,
 				56012E8A18CCE9E000EA6955 /* main.m in Sources */,

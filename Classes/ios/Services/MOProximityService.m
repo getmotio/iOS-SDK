@@ -8,6 +8,7 @@
 
 #import "MOProximityService.h"
 #import "MOBeaconDataAccumulator.h"
+#import "CLBeacon+Indexable.h"
 
 NSString * const MOBeaconRegionIdentifier = @"RegionOfInterest";
 
@@ -101,8 +102,12 @@ NSString * const MOProximityServiceMinorKey = @"MOProximityServiceMinorKey";
 
 - (void)locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region {
     [self.beaconDataAccumulator pushRangedBeaconsData:beacons];
-    for (CLBeacon *beacon in beacons) {
-        NSLog(@"Beacon <%@, %@, %@> - %f", [beacon.proximityUUID UUIDString], beacon.major, beacon.minor, [self.beaconDataAccumulator proximityToBeacon:beacon]);
+    if (self.delegate) {
+        NSMutableDictionary *beaconsDetected = [[NSMutableDictionary alloc] initWithCapacity:[beacons count]];
+        for (CLBeacon *beacon in beacons) {
+            [beaconsDetected setObject:@([self.beaconDataAccumulator proximityToBeacon:beacon]) forKey:beacon.key];
+        }
+        [self.delegate beaconsDetected:beaconsDetected];
     }
 }
 
